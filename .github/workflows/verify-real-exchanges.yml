@@ -1,0 +1,27 @@
+name: Verify Real Binance & Bybit Connectivity
+
+on:
+  push: {}
+  workflow_dispatch: {}
+
+jobs:
+  real-exchange-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run REAL Binance + Bybit connectivity test (3 minutes)
+        run: python3 scripts/real_connectivity_check.py 180
+
+      - name: Run the full automated test suite (112 tests)
+        if: always()
+        run: pytest -q
