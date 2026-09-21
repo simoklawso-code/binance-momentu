@@ -1,0 +1,2614 @@
+{
+  "duration_seconds": 150.0,
+  "symbols_tested": [
+    "BTCUSDT",
+    "ETHUSDT",
+    "SOLUSDT",
+    "BNBUSDT",
+    "XRPUSDT",
+    "DOGEUSDT",
+    "ADAUSDT",
+    "AVAXUSDT"
+  ],
+  "pump_symbol": "ETHUSDT",
+  "snapshots": [
+    {
+      "buffer": {
+        "state": "normal",
+        "size": 0,
+        "capacity": 10000,
+        "utilization": 0.0,
+        "dropped_total": 0,
+        "dropped_by_priority": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "p0_protected_overflow_events": 0,
+        "counts_by_priority": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        }
+      },
+      "binance": {
+        "exchange": "binance",
+        "total_messages_received": 107,
+        "total_reconnects": 0,
+        "is_healthy": true,
+        "connections": [
+          {
+            "connection_id": "binance-shard-0",
+            "state": "healthy",
+            "subscribed_symbols": 3,
+            "messages_received": 40,
+            "reconnect_count": 0,
+            "last_message_age_ms": 485.19208200002595,
+            "last_error": null
+          },
+          {
+            "connection_id": "binance-shard-1",
+            "state": "healthy",
+            "subscribed_symbols": 3,
+            "messages_received": 40,
+            "reconnect_count": 0,
+            "last_message_age_ms": 485.1346120000244,
+            "last_error": null
+          },
+          {
+            "connection_id": "binance-shard-2",
+            "state": "healthy",
+            "subscribed_symbols": 2,
+            "messages_received": 27,
+            "reconnect_count": 0,
+            "last_message_age_ms": 485.10677299998406,
+            "last_error": null
+          }
+        ]
+      },
+      "bybit": {
+        "exchange": "bybit",
+        "total_messages_received": 104,
+        "total_reconnects": 0,
+        "is_healthy": true,
+        "connections": [
+          {
+            "connection_id": "bybit-shard-0",
+            "state": "healthy",
+            "subscribed_symbols": 8,
+            "messages_received": 104,
+            "reconnect_count": 0,
+            "last_message_age_ms": 483.4683529999211,
+            "last_error": null
+          }
+        ]
+      },
+      "events_consumed_total": 0,
+      "t": 5.0,
+      "candidates_binance": [],
+      "signals_evaluated_total": 0,
+      "entries_opened_total": 0,
+      "open_positions": 0,
+      "closed_positions": 0
+    },
+    {
+      "buffer": {
+        "state": "normal",
+        "size": 0,
+        "capacity": 10000,
+        "utilization": 0.0,
+        "dropped_total": 0,
+        "dropped_by_priority": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "p0_protected_overflow_events": 0,
+        "counts_by_priority": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        }
+      },
+      "binance": {
+        "exchange": "binance",
+        "total_messages_received": 227,
+        "total_reconnects": 0,
+        "is_healthy": true,
+        "connections": [
+          {
+            "connection_id": "binance-shard-0",
+            "state": "healthy",
+            "subscribed_symbols": 3,
+            "messages_received": 85,
+            "reconnect_count": 0,
+            "last_message_age_ms": 474.80571200003396,
+            "last_error": null
+          },
+          {
+            "connection_id": "binance-shard-1",
+            "state": "healthy",
+            "subscribed_symbols": 3,
+            "messages_received": 85,
+            "reconnect_count": 0,
+            "last_message_age_ms": 474.7506409999005,
+            "last_error": null
+          },
+          {
+            "connection_id": "binance-shard-2",
+            "state": "healthy",
+            "subscribed_symbols": 2,
+            "messages_received": 57,
+            "reconnect_count": 0,
+            "last_message_age_ms": 474.71767199999704,
+            "last_error": null
+          }
+        ]
+      },
+      "bybit": {
+        "exchange": "bybit",
+        "total_messages_received": 225,
+        "total_reconnects": 0,
+        "is_healthy": true,
+        "connections": [
+          {
+            "connection_id": "bybit-shard-0",
+            "state": "healthy",
+            "subscribed_symbols": 8,
+            "messages_received": 225,
+            "reconnect_count": 0,
+            "last_message_age_ms": 472.95901600000434,
+            "last_error": null
+          }
+        ]
+      },
+      "events_consumed_total": 0,
+      "t": 10.0,
+      "candidates_binance": [],
+      "signals_evaluated_total": 0,
+      "entries_opened_total": 0,
+      "open_positions": 0,
+      "closed_positions": 0
+    },
+    {
+      "buffer": {
+        "state": "normal",
+        "size": 0,
+        "capacity": 10000,
+        "utilization": 0.0,
+        "dropped_total": 0,
+        "dropped_by_priority": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "p0_protected_overflow_events": 0,
+        "counts_by_priority": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        }
+      },
+      "binance": {
+        "exchange": "binance",
+        "total_messages_received": 347,
+        "total_reconnects": 0,
+        "is_healthy": true,
+        "connections": [
+          {
+            "connection_id": "binance-shard-0",
+            "state": "healthy",
+            "subscribed_symbols": 3,
+            "messages_received": 130,
+            "reconnect_count": 0,
+            "last_message_age_ms": 463.69656199999554,
+            "last_error": null
+          },
+          {
+            "connection_id": "binance-shard-1",
+            "state": "healthy",
+            "subscribed_symbols": 3,
+            "messages_received": 130,
+            "reconnect_count": 0,
+            "last_message_age_ms": 463.62952500010124,
+            "last_error": null
+          },
+          {
+            "connection_id": "binance-shard-2",
+            "state": "healthy",
+            "subscribed_symbols": 2,
+            "messages_received": 87,
+            "reconnect_count": 0,
+            "last_message_age_ms": 463.59013200003574,
+            "last_error": null
+          }
+        ]
+      },
+      "bybit": {
+        "exchange": "bybit",
+        "total_messages_received": 346,
+        "total_reconnects": 0,
+        "is_healthy": true,
+        "connections": [
+          {
+            "connection_id": "bybit-shard-0",
+            "state": "healthy",
+            "subscribed_symbols": 8,
+            "messages_received": 346,
+            "reconnect_count": 0,
+            "last_message_age_ms": 461.55184700000973,
+            "last_error": null
+          }
+        ]
+      },
+      "events_consumed_total": 0,
+      "t": 15.0,
+      "candidates_binance": [],
+      "signals_evaluated_total": 0,
+      "entries_opened_total": 0,
+      "open_positions": 0,
+      "closed_positions": 0
+    },
+    {
+      "buffer": {
+        "state": "normal",
+        "size": 0,
+        "capacity": 10000,
+        "utilization": 0.0,
+        "dropped_total": 0,
+        "dropped_by_priority": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "p0_protected_overflow_events": 0,
+        "counts_by_priority": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        }
+      },
+      "binance": {
+        "exchange": "binance",
+        "total_messages_received": 467,
+        "total_reconnects": 0,
+        "is_healthy": true,
+        "connections": [
+          {
+            "connection_id": "binance-shard-0",
+            "state": "healthy",
+            "subscribed_symbols": 3,
+            "messages_received": 175,
+            "reconnect_count": 0,
+            "last_message_age_ms": 452.9234760000236,
+            "last_error": null
+          },
+          {
+            "connection_id": "binance-shard-1",
+            "state": "healthy",
+            "subscribed_symbols": 3,
+            "messages_received": 175,
+            "reconnect_count": 0,
+            "last_message_age_ms": 452.8688200000488,
+            "last_error": null
+          },
+          {
+            "connection_id": "binance-shard-2",
+            "state": "healthy",
+            "subscribed_symbols": 2,
+            "messages_received": 117,
+            "reconnect_count": 0,
+            "last_message_age_ms": 452.8368810000529,
+            "last_error": null
+          }
+        ]
+      },
+      "bybit": {
+        "exchange": "bybit",
+        "total_messages_received": 467,
+        "total_reconnects": 0,
+        "is_healthy": true,
+        "connections": [
+          {
+            "connection_id": "bybit-shard-0",
+            "state": "healthy",
+            "subscribed_symbols": 8,
+            "messages_received": 467,
+            "reconnect_count": 0,
+            "last_message_age_ms": 448.9735770000607,
+            "last_error": null
+          }
+        ]
+      },
+      "events_consumed_total": 0,
+      "t": 20.0,
+      "candidates_binance": [],
+      "signals_evaluated_total": 0,
+      "entries_opened_total": 0,
+      "open_positions": 0,
+      "closed_positions": 0
+    },
+    {
+      "buffer": {
+        "state": "normal",
+        "size": 0,
+        "capacity": 10000,
+        "utilization": 0.0,
+        "dropped_total": 0,
+        "dropped_by_priority": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "p0_protected_overflow_events": 0,
+        "counts_by_priority": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        }
+      },
+      "binance": {
+        "exchange": "binance",
+        "total_messages_received": 542,
+        "total_reconnects": 0,
+        "is_healthy": true,
+        "connections": [
+          {
+            "connection_id": "binance-shard-0",
+            "state": "healthy",
+            "subscribed_symbols": 3,
+            "messages_received": 175,
+            "reconnect_count": 0,
+            "last_message_age_ms": 5453.544304000047,
+            "last_error": null
+          },
+          {
+            "connection_id": "binance-shard-1",
+            "state": "healthy",
+            "subscribed_symbols": 3,
+            "messages_received": 220,
+            "reconnect_count": 0,
+            "last_message_age_ms": 440.2900549999913,
+            "last_error": null
+          },
+          {
+            "connection_id": "binance-shard-2",
+            "state": "healthy",
+            "subscribed_symbols": 2,
+            "messages_received": 147,
+            "reconnect_count": 0,
+            "last_message_age_ms": 440.2435270000069,
+            "last_error": null
+          }
+        ]
+      },
+      "bybit": {
+        "exchange": "bybit",
+        "total_messages_received": 588,
+        "total_reconnects": 0,
+        "is_healthy": true,
+        "connections": [
+          {
+            "connection_id": "bybit-shard-0",
+            "state": "healthy",
+            "subscribed_symbols": 8,
+            "messages_received": 588,
+            "reconnect_count": 0,
+            "last_message_age_ms": 440.0758180000821,
+            "last_error": null
+          }
+        ]
+      },
+      "events_consumed_total": 0,
+      "t": 25.0,
+      "candidates_binance": [],
+      "signals_evaluated_total": 0,
+      "entries_opened_total": 0,
+      "open_positions": 0,
+      "closed_positions": 0
+    },
+    {
+      "buffer": {
+        "state": "normal",
+        "size": 0,
+        "capacity": 10000,
+        "utilization": 0.0,
+        "dropped_total": 0,
+        "dropped_by_priority": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "p0_protected_overflow_events": 0,
+        "counts_by_priority": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        }
+      },
+      "binance": {
+        "exchange": "binance",
+        "total_messages_received": 630,
+        "total_reconnects": 0,
+        "is_healthy": true,
+        "connections": [
+          {
+            "connection_id": "binance-shard-0",
+            "state": "healthy",
+            "subscribed_symbols": 3,
+            "messages_received": 175,
+            "reconnect_count": 0,
+            "last_message_age_ms": 10454.131045000053,
+            "last_error": null
+          },
+          {
+            "connection_id": "binance-shard-1",
+            "state": "healthy",
+            "subscribed_symbols": 3,
+            "messages_received": 265,
+            "reconnect_count": 0,
+            "last_message_age_ms": 429.34257400008846,
+            "last_error": null
+          },
+          {
+            "connection_id": "binance-shard-2",
+            "state": "healthy",
+            "subscribed_symbols": 3,
+            "messages_received": 190,
+            "reconnect_count": 0,
+            "last_message_age_ms": 429.2817669999067,
+            "last_error": null
+          }
+        ]
+      },
+      "bybit": {
+        "exchange": "bybit",
+        "total_messages_received": 709,
+        "total_reconnects": 0,
+        "is_healthy": true,
+        "connections": [
+          {
+            "connection_id": "bybit-shard-0",
+            "state": "healthy",
+            "subscribed_symbols": 8,
+            "messages_received": 709,
+            "reconnect_count": 0,
+            "last_message_age_ms": 429.19153499997265,
+            "last_error": null
+          }
+        ]
+      },
+      "events_consumed_total": 0,
+      "t": 30.0,
+      "candidates_binance": [
+        "ETHUSDT"
+      ],
+      "signals_evaluated_total": 4,
+      "entries_opened_total": 1,
+      "open_positions": 0,
+      "closed_positions": 1
+    },
+    {
+      "buffer": {
+        "state": "normal",
+        "size": 0,
+        "capacity": 10000,
+        "utilization": 0.0,
+        "dropped_total": 0,
+        "dropped_by_priority": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "p0_protected_overflow_events": 0,
+        "counts_by_priority": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        }
+      },
+      "binance": {
+        "exchange": "binance",
+        "total_messages_received": 735,
+        "total_reconnects": 1,
+        "is_healthy": true,
+        "connections": [
+          {
+            "connection_id": "binance-shard-0",
+            "state": "healthy",
+            "subscribed_symbols": 3,
+            "messages_received": 206,
+            "reconnect_count": 1,
+            "last_message_age_ms": 428.5549579999497,
+            "last_error": "no close frame received or sent"
+          },
+          {
+            "connection_id": "binance-shard-1",
+            "state": "healthy",
+            "subscribed_symbols": 2,
+            "messages_received": 302,
+            "reconnect_count": 0,
+            "last_message_age_ms": 417.563274000031,
+            "last_error": null
+          },
+          {
+            "connection_id": "binance-shard-2",
+            "state": "healthy",
+            "subscribed_symbols": 2,
+            "messages_received": 227,
+            "reconnect_count": 0,
+            "last_message_age_ms": 417.51297400003295,
+            "last_error": null
+          }
+        ]
+      },
+      "bybit": {
+        "exchange": "bybit",
+        "total_messages_received": 830,
+        "total_reconnects": 0,
+        "is_healthy": true,
+        "connections": [
+          {
+            "connection_id": "bybit-shard-0",
+            "state": "healthy",
+            "subscribed_symbols": 8,
+            "messages_received": 830,
+            "reconnect_count": 0,
+            "last_message_age_ms": 417.24034499998197,
+            "last_error": null
+          }
+        ]
+      },
+      "events_consumed_total": 0,
+      "t": 35.0,
+      "candidates_binance": [],
+      "signals_evaluated_total": 8,
+      "entries_opened_total": 1,
+      "open_positions": 0,
+      "closed_positions": 1
+    },
+    {
+      "buffer": {
+        "state": "normal",
+        "size": 0,
+        "capacity": 10000,
+        "utilization": 0.0,
+        "dropped_total": 0,
+        "dropped_by_priority": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "p0_protected_overflow_events": 0,
+        "counts_by_priority": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        }
+      },
+      "binance": {
+        "exchange": "binance",
+        "total_messages_received": 840,
+        "total_reconnects": 1,
+        "is_healthy": true,
+        "connections": [
+          {
+            "connection_id": "binance-shard-0",
+            "state": "healthy",
+            "subscribed_symbols": 3,
+            "messages_received": 251,
+            "reconnect_count": 1,
+            "last_message_age_ms": 418.7875420000182,
+            "last_error": "no close frame received or sent"
+          },
+          {
+            "connection_id": "binance-shard-1",
+            "state": "healthy",
+            "subscribed_symbols": 2,
+            "messages_received": 332,
+            "reconnect_count": 0,
+            "last_message_age_ms": 408.01374399995893,
+            "last_error": null
+          },
+          {
+            "connection_id": "binance-shard-2",
+            "state": "healthy",
+            "subscribed_symbols": 2,
+            "messages_received": 257,
+            "reconnect_count": 0,
+            "last_message_age_ms": 407.9028419999986,
+            "last_error": null
+          }
+        ]
+      },
+      "bybit": {
+        "exchange": "bybit",
+        "total_messages_received": 945,
+        "total_reconnects": 0,
+        "is_healthy": true,
+        "connections": [
+          {
+            "connection_id": "bybit-shard-0",
+            "state": "healthy",
+            "subscribed_symbols": 7,
+            "messages_received": 945,
+            "reconnect_count": 0,
+            "last_message_age_ms": 407.21969799994895,
+            "last_error": null
+          }
+        ]
+      },
+      "events_consumed_total": 0,
+      "t": 40.0,
+      "candidates_binance": [],
+      "signals_evaluated_total": 9,
+      "entries_opened_total": 1,
+      "open_positions": 0,
+      "closed_positions": 1
+    },
+    {
+      "buffer": {
+        "state": "normal",
+        "size": 0,
+        "capacity": 10000,
+        "utilization": 0.0,
+        "dropped_total": 0,
+        "dropped_by_priority": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "p0_protected_overflow_events": 0,
+        "counts_by_priority": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        }
+      },
+      "binance": {
+        "exchange": "binance",
+        "total_messages_received": 945,
+        "total_reconnects": 1,
+        "is_healthy": true,
+        "connections": [
+          {
+            "connection_id": "binance-shard-0",
+            "state": "healthy",
+            "subscribed_symbols": 3,
+            "messages_received": 296,
+            "reconnect_count": 1,
+            "last_message_age_ms": 408.3928019999803,
+            "last_error": "no close frame received or sent"
+          },
+          {
+            "connection_id": "binance-shard-1",
+            "state": "healthy",
+            "subscribed_symbols": 2,
+            "messages_received": 362,
+            "reconnect_count": 0,
+            "last_message_age_ms": 397.69412600003307,
+            "last_error": null
+          },
+          {
+            "connection_id": "binance-shard-2",
+            "state": "healthy",
+            "subscribed_symbols": 2,
+            "messages_received": 287,
+            "reconnect_count": 0,
+            "last_message_age_ms": 397.6441329999716,
+            "last_error": null
+          }
+        ]
+      },
+      "bybit": {
+        "exchange": "bybit",
+        "total_messages_received": 1051,
+        "total_reconnects": 0,
+        "is_healthy": true,
+        "connections": [
+          {
+            "connection_id": "bybit-shard-0",
+            "state": "healthy",
+            "subscribed_symbols": 7,
+            "messages_received": 1051,
+            "reconnect_count": 0,
+            "last_message_age_ms": 395.76069300005656,
+            "last_error": null
+          }
+        ]
+      },
+      "events_consumed_total": 0,
+      "t": 45.0,
+      "candidates_binance": [],
+      "signals_evaluated_total": 9,
+      "entries_opened_total": 1,
+      "open_positions": 0,
+      "closed_positions": 1
+    },
+    {
+      "buffer": {
+        "state": "normal",
+        "size": 0,
+        "capacity": 10000,
+        "utilization": 0.0,
+        "dropped_total": 0,
+        "dropped_by_priority": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "p0_protected_overflow_events": 0,
+        "counts_by_priority": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        }
+      },
+      "binance": {
+        "exchange": "binance",
+        "total_messages_received": 1050,
+        "total_reconnects": 1,
+        "is_healthy": true,
+        "connections": [
+          {
+            "connection_id": "binance-shard-0",
+            "state": "healthy",
+            "subscribed_symbols": 3,
+            "messages_received": 341,
+            "reconnect_count": 1,
+            "last_message_age_ms": 397.24055399994995,
+            "last_error": "no close frame received or sent"
+          },
+          {
+            "connection_id": "binance-shard-1",
+            "state": "healthy",
+            "subscribed_symbols": 2,
+            "messages_received": 392,
+            "reconnect_count": 0,
+            "last_message_age_ms": 384.92384299991045,
+            "last_error": null
+          },
+          {
+            "connection_id": "binance-shard-2",
+            "state": "healthy",
+            "subscribed_symbols": 2,
+            "messages_received": 317,
+            "reconnect_count": 0,
+            "last_message_age_ms": 384.8756319999893,
+            "last_error": null
+          }
+        ]
+      },
+      "bybit": {
+        "exchange": "bybit",
+        "total_messages_received": 1157,
+        "total_reconnects": 0,
+        "is_healthy": true,
+        "connections": [
+          {
+            "connection_id": "bybit-shard-0",
+            "state": "healthy",
+            "subscribed_symbols": 7,
+            "messages_received": 1157,
+            "reconnect_count": 0,
+            "last_message_age_ms": 384.7931880000033,
+            "last_error": null
+          }
+        ]
+      },
+      "events_consumed_total": 0,
+      "t": 50.0,
+      "candidates_binance": [],
+      "signals_evaluated_total": 9,
+      "entries_opened_total": 1,
+      "open_positions": 0,
+      "closed_positions": 1
+    },
+    {
+      "buffer": {
+        "state": "normal",
+        "size": 0,
+        "capacity": 10000,
+        "utilization": 0.0,
+        "dropped_total": 0,
+        "dropped_by_priority": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "p0_protected_overflow_events": 0,
+        "counts_by_priority": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        }
+      },
+      "binance": {
+        "exchange": "binance",
+        "total_messages_received": 1155,
+        "total_reconnects": 1,
+        "is_healthy": true,
+        "connections": [
+          {
+            "connection_id": "binance-shard-0",
+            "state": "healthy",
+            "subscribed_symbols": 3,
+            "messages_received": 386,
+            "reconnect_count": 1,
+            "last_message_age_ms": 389.26307299993823,
+            "last_error": "no close frame received or sent"
+          },
+          {
+            "connection_id": "binance-shard-1",
+            "state": "healthy",
+            "subscribed_symbols": 2,
+            "messages_received": 422,
+            "reconnect_count": 0,
+            "last_message_age_ms": 376.19065299998056,
+            "last_error": null
+          },
+          {
+            "connection_id": "binance-shard-2",
+            "state": "healthy",
+            "subscribed_symbols": 2,
+            "messages_received": 347,
+            "reconnect_count": 0,
+            "last_message_age_ms": 376.1417729999721,
+            "last_error": null
+          }
+        ]
+      },
+      "bybit": {
+        "exchange": "bybit",
+        "total_messages_received": 1263,
+        "total_reconnects": 0,
+        "is_healthy": true,
+        "connections": [
+          {
+            "connection_id": "bybit-shard-0",
+            "state": "healthy",
+            "subscribed_symbols": 7,
+            "messages_received": 1263,
+            "reconnect_count": 0,
+            "last_message_age_ms": 376.05903700000454,
+            "last_error": null
+          }
+        ]
+      },
+      "events_consumed_total": 0,
+      "t": 55.0,
+      "candidates_binance": [],
+      "signals_evaluated_total": 9,
+      "entries_opened_total": 1,
+      "open_positions": 0,
+      "closed_positions": 1
+    },
+    {
+      "buffer": {
+        "state": "normal",
+        "size": 0,
+        "capacity": 10000,
+        "utilization": 0.0,
+        "dropped_total": 0,
+        "dropped_by_priority": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "p0_protected_overflow_events": 0,
+        "counts_by_priority": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        }
+      },
+      "binance": {
+        "exchange": "binance",
+        "total_messages_received": 1260,
+        "total_reconnects": 1,
+        "is_healthy": true,
+        "connections": [
+          {
+            "connection_id": "binance-shard-0",
+            "state": "healthy",
+            "subscribed_symbols": 3,
+            "messages_received": 431,
+            "reconnect_count": 1,
+            "last_message_age_ms": 379.0530899999567,
+            "last_error": "no close frame received or sent"
+          },
+          {
+            "connection_id": "binance-shard-1",
+            "state": "healthy",
+            "subscribed_symbols": 2,
+            "messages_received": 452,
+            "reconnect_count": 0,
+            "last_message_age_ms": 368.12722599995595,
+            "last_error": null
+          },
+          {
+            "connection_id": "binance-shard-2",
+            "state": "healthy",
+            "subscribed_symbols": 2,
+            "messages_received": 377,
+            "reconnect_count": 0,
+            "last_message_age_ms": 368.07787699990513,
+            "last_error": null
+          }
+        ]
+      },
+      "bybit": {
+        "exchange": "bybit",
+        "total_messages_received": 1369,
+        "total_reconnects": 0,
+        "is_healthy": true,
+        "connections": [
+          {
+            "connection_id": "bybit-shard-0",
+            "state": "healthy",
+            "subscribed_symbols": 7,
+            "messages_received": 1369,
+            "reconnect_count": 0,
+            "last_message_age_ms": 367.8774740000108,
+            "last_error": null
+          }
+        ]
+      },
+      "events_consumed_total": 0,
+      "t": 60.0,
+      "candidates_binance": [],
+      "signals_evaluated_total": 9,
+      "entries_opened_total": 1,
+      "open_positions": 0,
+      "closed_positions": 1
+    },
+    {
+      "buffer": {
+        "state": "normal",
+        "size": 0,
+        "capacity": 10000,
+        "utilization": 0.0,
+        "dropped_total": 0,
+        "dropped_by_priority": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "p0_protected_overflow_events": 0,
+        "counts_by_priority": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        }
+      },
+      "binance": {
+        "exchange": "binance",
+        "total_messages_received": 1365,
+        "total_reconnects": 1,
+        "is_healthy": true,
+        "connections": [
+          {
+            "connection_id": "binance-shard-0",
+            "state": "healthy",
+            "subscribed_symbols": 3,
+            "messages_received": 476,
+            "reconnect_count": 1,
+            "last_message_age_ms": 369.7944479999933,
+            "last_error": "no close frame received or sent"
+          },
+          {
+            "connection_id": "binance-shard-1",
+            "state": "healthy",
+            "subscribed_symbols": 2,
+            "messages_received": 482,
+            "reconnect_count": 0,
+            "last_message_age_ms": 359.2802800000072,
+            "last_error": null
+          },
+          {
+            "connection_id": "binance-shard-2",
+            "state": "healthy",
+            "subscribed_symbols": 2,
+            "messages_received": 407,
+            "reconnect_count": 0,
+            "last_message_age_ms": 359.23776200002067,
+            "last_error": null
+          }
+        ]
+      },
+      "bybit": {
+        "exchange": "bybit",
+        "total_messages_received": 1475,
+        "total_reconnects": 0,
+        "is_healthy": true,
+        "connections": [
+          {
+            "connection_id": "bybit-shard-0",
+            "state": "healthy",
+            "subscribed_symbols": 7,
+            "messages_received": 1475,
+            "reconnect_count": 0,
+            "last_message_age_ms": 357.6097170000594,
+            "last_error": null
+          }
+        ]
+      },
+      "events_consumed_total": 0,
+      "t": 65.0,
+      "candidates_binance": [],
+      "signals_evaluated_total": 9,
+      "entries_opened_total": 1,
+      "open_positions": 0,
+      "closed_positions": 1
+    },
+    {
+      "buffer": {
+        "state": "normal",
+        "size": 0,
+        "capacity": 10000,
+        "utilization": 0.0,
+        "dropped_total": 0,
+        "dropped_by_priority": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "p0_protected_overflow_events": 0,
+        "counts_by_priority": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        }
+      },
+      "binance": {
+        "exchange": "binance",
+        "total_messages_received": 1470,
+        "total_reconnects": 1,
+        "is_healthy": true,
+        "connections": [
+          {
+            "connection_id": "binance-shard-0",
+            "state": "healthy",
+            "subscribed_symbols": 3,
+            "messages_received": 521,
+            "reconnect_count": 1,
+            "last_message_age_ms": 360.9920390000525,
+            "last_error": "no close frame received or sent"
+          },
+          {
+            "connection_id": "binance-shard-1",
+            "state": "healthy",
+            "subscribed_symbols": 2,
+            "messages_received": 512,
+            "reconnect_count": 0,
+            "last_message_age_ms": 350.33002900001975,
+            "last_error": null
+          },
+          {
+            "connection_id": "binance-shard-2",
+            "state": "healthy",
+            "subscribed_symbols": 2,
+            "messages_received": 437,
+            "reconnect_count": 0,
+            "last_message_age_ms": 350.28184099996906,
+            "last_error": null
+          }
+        ]
+      },
+      "bybit": {
+        "exchange": "bybit",
+        "total_messages_received": 1581,
+        "total_reconnects": 0,
+        "is_healthy": true,
+        "connections": [
+          {
+            "connection_id": "bybit-shard-0",
+            "state": "healthy",
+            "subscribed_symbols": 7,
+            "messages_received": 1581,
+            "reconnect_count": 0,
+            "last_message_age_ms": 347.6220689999536,
+            "last_error": null
+          }
+        ]
+      },
+      "events_consumed_total": 0,
+      "t": 70.0,
+      "candidates_binance": [],
+      "signals_evaluated_total": 9,
+      "entries_opened_total": 1,
+      "open_positions": 0,
+      "closed_positions": 1
+    },
+    {
+      "buffer": {
+        "state": "normal",
+        "size": 0,
+        "capacity": 10000,
+        "utilization": 0.0,
+        "dropped_total": 0,
+        "dropped_by_priority": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "p0_protected_overflow_events": 0,
+        "counts_by_priority": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        }
+      },
+      "binance": {
+        "exchange": "binance",
+        "total_messages_received": 1575,
+        "total_reconnects": 1,
+        "is_healthy": true,
+        "connections": [
+          {
+            "connection_id": "binance-shard-0",
+            "state": "healthy",
+            "subscribed_symbols": 3,
+            "messages_received": 566,
+            "reconnect_count": 1,
+            "last_message_age_ms": 349.32399900003475,
+            "last_error": "no close frame received or sent"
+          },
+          {
+            "connection_id": "binance-shard-1",
+            "state": "healthy",
+            "subscribed_symbols": 2,
+            "messages_received": 542,
+            "reconnect_count": 0,
+            "last_message_age_ms": 341.43726199999946,
+            "last_error": null
+          },
+          {
+            "connection_id": "binance-shard-2",
+            "state": "healthy",
+            "subscribed_symbols": 2,
+            "messages_received": 467,
+            "reconnect_count": 0,
+            "last_message_age_ms": 341.38409299998784,
+            "last_error": null
+          }
+        ]
+      },
+      "bybit": {
+        "exchange": "bybit",
+        "total_messages_received": 1687,
+        "total_reconnects": 0,
+        "is_healthy": true,
+        "connections": [
+          {
+            "connection_id": "bybit-shard-0",
+            "state": "healthy",
+            "subscribed_symbols": 7,
+            "messages_received": 1687,
+            "reconnect_count": 0,
+            "last_message_age_ms": 335.5565200000683,
+            "last_error": null
+          }
+        ]
+      },
+      "events_consumed_total": 0,
+      "t": 75.0,
+      "candidates_binance": [],
+      "signals_evaluated_total": 9,
+      "entries_opened_total": 1,
+      "open_positions": 0,
+      "closed_positions": 1
+    },
+    {
+      "buffer": {
+        "state": "normal",
+        "size": 0,
+        "capacity": 10000,
+        "utilization": 0.0,
+        "dropped_total": 0,
+        "dropped_by_priority": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "p0_protected_overflow_events": 0,
+        "counts_by_priority": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        }
+      },
+      "binance": {
+        "exchange": "binance",
+        "total_messages_received": 1680,
+        "total_reconnects": 1,
+        "is_healthy": true,
+        "connections": [
+          {
+            "connection_id": "binance-shard-0",
+            "state": "healthy",
+            "subscribed_symbols": 3,
+            "messages_received": 611,
+            "reconnect_count": 1,
+            "last_message_age_ms": 337.09357599991563,
+            "last_error": "no close frame received or sent"
+          },
+          {
+            "connection_id": "binance-shard-1",
+            "state": "healthy",
+            "subscribed_symbols": 2,
+            "messages_received": 572,
+            "reconnect_count": 0,
+            "last_message_age_ms": 332.34774900006414,
+            "last_error": null
+          },
+          {
+            "connection_id": "binance-shard-2",
+            "state": "healthy",
+            "subscribed_symbols": 2,
+            "messages_received": 497,
+            "reconnect_count": 0,
+            "last_message_age_ms": 332.28961899999376,
+            "last_error": null
+          }
+        ]
+      },
+      "bybit": {
+        "exchange": "bybit",
+        "total_messages_received": 1793,
+        "total_reconnects": 0,
+        "is_healthy": true,
+        "connections": [
+          {
+            "connection_id": "bybit-shard-0",
+            "state": "healthy",
+            "subscribed_symbols": 7,
+            "messages_received": 1793,
+            "reconnect_count": 0,
+            "last_message_age_ms": 323.4340459999885,
+            "last_error": null
+          }
+        ]
+      },
+      "events_consumed_total": 0,
+      "t": 80.0,
+      "candidates_binance": [],
+      "signals_evaluated_total": 9,
+      "entries_opened_total": 1,
+      "open_positions": 0,
+      "closed_positions": 1
+    },
+    {
+      "buffer": {
+        "state": "normal",
+        "size": 0,
+        "capacity": 10000,
+        "utilization": 0.0,
+        "dropped_total": 0,
+        "dropped_by_priority": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "p0_protected_overflow_events": 0,
+        "counts_by_priority": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        }
+      },
+      "binance": {
+        "exchange": "binance",
+        "total_messages_received": 1785,
+        "total_reconnects": 1,
+        "is_healthy": true,
+        "connections": [
+          {
+            "connection_id": "binance-shard-0",
+            "state": "healthy",
+            "subscribed_symbols": 3,
+            "messages_received": 656,
+            "reconnect_count": 1,
+            "last_message_age_ms": 324.9818229999164,
+            "last_error": "no close frame received or sent"
+          },
+          {
+            "connection_id": "binance-shard-1",
+            "state": "healthy",
+            "subscribed_symbols": 2,
+            "messages_received": 602,
+            "reconnect_count": 0,
+            "last_message_age_ms": 323.240563000013,
+            "last_error": null
+          },
+          {
+            "connection_id": "binance-shard-2",
+            "state": "healthy",
+            "subscribed_symbols": 2,
+            "messages_received": 527,
+            "reconnect_count": 0,
+            "last_message_age_ms": 323.18822700005967,
+            "last_error": null
+          }
+        ]
+      },
+      "bybit": {
+        "exchange": "bybit",
+        "total_messages_received": 1899,
+        "total_reconnects": 0,
+        "is_healthy": true,
+        "connections": [
+          {
+            "connection_id": "bybit-shard-0",
+            "state": "healthy",
+            "subscribed_symbols": 7,
+            "messages_received": 1899,
+            "reconnect_count": 0,
+            "last_message_age_ms": 310.4399650000005,
+            "last_error": null
+          }
+        ]
+      },
+      "events_consumed_total": 0,
+      "t": 85.0,
+      "candidates_binance": [],
+      "signals_evaluated_total": 9,
+      "entries_opened_total": 1,
+      "open_positions": 0,
+      "closed_positions": 1
+    },
+    {
+      "buffer": {
+        "state": "normal",
+        "size": 0,
+        "capacity": 10000,
+        "utilization": 0.0,
+        "dropped_total": 0,
+        "dropped_by_priority": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "p0_protected_overflow_events": 0,
+        "counts_by_priority": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        }
+      },
+      "binance": {
+        "exchange": "binance",
+        "total_messages_received": 1890,
+        "total_reconnects": 1,
+        "is_healthy": true,
+        "connections": [
+          {
+            "connection_id": "binance-shard-0",
+            "state": "healthy",
+            "subscribed_symbols": 3,
+            "messages_received": 701,
+            "reconnect_count": 1,
+            "last_message_age_ms": 312.32100299996546,
+            "last_error": "no close frame received or sent"
+          },
+          {
+            "connection_id": "binance-shard-1",
+            "state": "healthy",
+            "subscribed_symbols": 2,
+            "messages_received": 632,
+            "reconnect_count": 0,
+            "last_message_age_ms": 312.28060000000823,
+            "last_error": null
+          },
+          {
+            "connection_id": "binance-shard-2",
+            "state": "healthy",
+            "subscribed_symbols": 2,
+            "messages_received": 557,
+            "reconnect_count": 0,
+            "last_message_age_ms": 312.24958899997546,
+            "last_error": null
+          }
+        ]
+      },
+      "bybit": {
+        "exchange": "bybit",
+        "total_messages_received": 2005,
+        "total_reconnects": 0,
+        "is_healthy": true,
+        "connections": [
+          {
+            "connection_id": "bybit-shard-0",
+            "state": "healthy",
+            "subscribed_symbols": 7,
+            "messages_received": 2005,
+            "reconnect_count": 0,
+            "last_message_age_ms": 297.35906199994133,
+            "last_error": null
+          }
+        ]
+      },
+      "events_consumed_total": 0,
+      "t": 90.0,
+      "candidates_binance": [],
+      "signals_evaluated_total": 9,
+      "entries_opened_total": 1,
+      "open_positions": 0,
+      "closed_positions": 1
+    },
+    {
+      "buffer": {
+        "state": "normal",
+        "size": 0,
+        "capacity": 10000,
+        "utilization": 0.0,
+        "dropped_total": 0,
+        "dropped_by_priority": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "p0_protected_overflow_events": 0,
+        "counts_by_priority": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        }
+      },
+      "binance": {
+        "exchange": "binance",
+        "total_messages_received": 1995,
+        "total_reconnects": 1,
+        "is_healthy": true,
+        "connections": [
+          {
+            "connection_id": "binance-shard-0",
+            "state": "healthy",
+            "subscribed_symbols": 3,
+            "messages_received": 746,
+            "reconnect_count": 1,
+            "last_message_age_ms": 303.31253500003186,
+            "last_error": "no close frame received or sent"
+          },
+          {
+            "connection_id": "binance-shard-1",
+            "state": "healthy",
+            "subscribed_symbols": 2,
+            "messages_received": 662,
+            "reconnect_count": 0,
+            "last_message_age_ms": 303.271488000064,
+            "last_error": null
+          },
+          {
+            "connection_id": "binance-shard-2",
+            "state": "healthy",
+            "subscribed_symbols": 2,
+            "messages_received": 587,
+            "reconnect_count": 0,
+            "last_message_age_ms": 303.23921700005485,
+            "last_error": null
+          }
+        ]
+      },
+      "bybit": {
+        "exchange": "bybit",
+        "total_messages_received": 2111,
+        "total_reconnects": 0,
+        "is_healthy": true,
+        "connections": [
+          {
+            "connection_id": "bybit-shard-0",
+            "state": "healthy",
+            "subscribed_symbols": 7,
+            "messages_received": 2111,
+            "reconnect_count": 0,
+            "last_message_age_ms": 283.42013300004965,
+            "last_error": null
+          }
+        ]
+      },
+      "events_consumed_total": 0,
+      "t": 95.0,
+      "candidates_binance": [],
+      "signals_evaluated_total": 9,
+      "entries_opened_total": 1,
+      "open_positions": 0,
+      "closed_positions": 1
+    },
+    {
+      "buffer": {
+        "state": "normal",
+        "size": 0,
+        "capacity": 10000,
+        "utilization": 0.0,
+        "dropped_total": 0,
+        "dropped_by_priority": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "p0_protected_overflow_events": 0,
+        "counts_by_priority": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        }
+      },
+      "binance": {
+        "exchange": "binance",
+        "total_messages_received": 2100,
+        "total_reconnects": 1,
+        "is_healthy": true,
+        "connections": [
+          {
+            "connection_id": "binance-shard-0",
+            "state": "healthy",
+            "subscribed_symbols": 3,
+            "messages_received": 791,
+            "reconnect_count": 1,
+            "last_message_age_ms": 292.92891499994766,
+            "last_error": "no close frame received or sent"
+          },
+          {
+            "connection_id": "binance-shard-1",
+            "state": "healthy",
+            "subscribed_symbols": 2,
+            "messages_received": 692,
+            "reconnect_count": 0,
+            "last_message_age_ms": 292.8842189999159,
+            "last_error": null
+          },
+          {
+            "connection_id": "binance-shard-2",
+            "state": "healthy",
+            "subscribed_symbols": 2,
+            "messages_received": 617,
+            "reconnect_count": 0,
+            "last_message_age_ms": 292.8513539999358,
+            "last_error": null
+          }
+        ]
+      },
+      "bybit": {
+        "exchange": "bybit",
+        "total_messages_received": 2217,
+        "total_reconnects": 0,
+        "is_healthy": true,
+        "connections": [
+          {
+            "connection_id": "bybit-shard-0",
+            "state": "healthy",
+            "subscribed_symbols": 7,
+            "messages_received": 2217,
+            "reconnect_count": 0,
+            "last_message_age_ms": 270.9491439999283,
+            "last_error": null
+          }
+        ]
+      },
+      "events_consumed_total": 0,
+      "t": 100.0,
+      "candidates_binance": [],
+      "signals_evaluated_total": 9,
+      "entries_opened_total": 1,
+      "open_positions": 0,
+      "closed_positions": 1
+    },
+    {
+      "buffer": {
+        "state": "normal",
+        "size": 0,
+        "capacity": 10000,
+        "utilization": 0.0,
+        "dropped_total": 0,
+        "dropped_by_priority": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "p0_protected_overflow_events": 0,
+        "counts_by_priority": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        }
+      },
+      "binance": {
+        "exchange": "binance",
+        "total_messages_received": 2205,
+        "total_reconnects": 1,
+        "is_healthy": true,
+        "connections": [
+          {
+            "connection_id": "binance-shard-0",
+            "state": "healthy",
+            "subscribed_symbols": 3,
+            "messages_received": 836,
+            "reconnect_count": 1,
+            "last_message_age_ms": 280.4086459999553,
+            "last_error": "no close frame received or sent"
+          },
+          {
+            "connection_id": "binance-shard-1",
+            "state": "healthy",
+            "subscribed_symbols": 2,
+            "messages_received": 722,
+            "reconnect_count": 0,
+            "last_message_age_ms": 280.3672400000323,
+            "last_error": null
+          },
+          {
+            "connection_id": "binance-shard-2",
+            "state": "healthy",
+            "subscribed_symbols": 2,
+            "messages_received": 647,
+            "reconnect_count": 0,
+            "last_message_age_ms": 280.27994199999284,
+            "last_error": null
+          }
+        ]
+      },
+      "bybit": {
+        "exchange": "bybit",
+        "total_messages_received": 2323,
+        "total_reconnects": 0,
+        "is_healthy": true,
+        "connections": [
+          {
+            "connection_id": "bybit-shard-0",
+            "state": "healthy",
+            "subscribed_symbols": 7,
+            "messages_received": 2323,
+            "reconnect_count": 0,
+            "last_message_age_ms": 260.4993889999605,
+            "last_error": null
+          }
+        ]
+      },
+      "events_consumed_total": 0,
+      "t": 105.0,
+      "candidates_binance": [],
+      "signals_evaluated_total": 9,
+      "entries_opened_total": 1,
+      "open_positions": 0,
+      "closed_positions": 1
+    },
+    {
+      "buffer": {
+        "state": "normal",
+        "size": 0,
+        "capacity": 10000,
+        "utilization": 0.0,
+        "dropped_total": 0,
+        "dropped_by_priority": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "p0_protected_overflow_events": 0,
+        "counts_by_priority": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        }
+      },
+      "binance": {
+        "exchange": "binance",
+        "total_messages_received": 2310,
+        "total_reconnects": 1,
+        "is_healthy": true,
+        "connections": [
+          {
+            "connection_id": "binance-shard-0",
+            "state": "healthy",
+            "subscribed_symbols": 3,
+            "messages_received": 881,
+            "reconnect_count": 1,
+            "last_message_age_ms": 269.3502710000075,
+            "last_error": "no close frame received or sent"
+          },
+          {
+            "connection_id": "binance-shard-1",
+            "state": "healthy",
+            "subscribed_symbols": 2,
+            "messages_received": 752,
+            "reconnect_count": 0,
+            "last_message_age_ms": 269.2773109999962,
+            "last_error": null
+          },
+          {
+            "connection_id": "binance-shard-2",
+            "state": "healthy",
+            "subscribed_symbols": 2,
+            "messages_received": 677,
+            "reconnect_count": 0,
+            "last_message_age_ms": 269.22712299995055,
+            "last_error": null
+          }
+        ]
+      },
+      "bybit": {
+        "exchange": "bybit",
+        "total_messages_received": 2429,
+        "total_reconnects": 0,
+        "is_healthy": true,
+        "connections": [
+          {
+            "connection_id": "bybit-shard-0",
+            "state": "healthy",
+            "subscribed_symbols": 7,
+            "messages_received": 2429,
+            "reconnect_count": 0,
+            "last_message_age_ms": 248.4106150000116,
+            "last_error": null
+          }
+        ]
+      },
+      "events_consumed_total": 0,
+      "t": 110.0,
+      "candidates_binance": [],
+      "signals_evaluated_total": 9,
+      "entries_opened_total": 1,
+      "open_positions": 0,
+      "closed_positions": 1
+    },
+    {
+      "buffer": {
+        "state": "normal",
+        "size": 0,
+        "capacity": 10000,
+        "utilization": 0.0,
+        "dropped_total": 0,
+        "dropped_by_priority": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "p0_protected_overflow_events": 0,
+        "counts_by_priority": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        }
+      },
+      "binance": {
+        "exchange": "binance",
+        "total_messages_received": 2415,
+        "total_reconnects": 1,
+        "is_healthy": true,
+        "connections": [
+          {
+            "connection_id": "binance-shard-0",
+            "state": "healthy",
+            "subscribed_symbols": 3,
+            "messages_received": 926,
+            "reconnect_count": 1,
+            "last_message_age_ms": 256.220674999895,
+            "last_error": "no close frame received or sent"
+          },
+          {
+            "connection_id": "binance-shard-1",
+            "state": "healthy",
+            "subscribed_symbols": 2,
+            "messages_received": 782,
+            "reconnect_count": 0,
+            "last_message_age_ms": 256.176423999932,
+            "last_error": null
+          },
+          {
+            "connection_id": "binance-shard-2",
+            "state": "healthy",
+            "subscribed_symbols": 2,
+            "messages_received": 707,
+            "reconnect_count": 0,
+            "last_message_age_ms": 256.1434859999281,
+            "last_error": null
+          }
+        ]
+      },
+      "bybit": {
+        "exchange": "bybit",
+        "total_messages_received": 2535,
+        "total_reconnects": 0,
+        "is_healthy": true,
+        "connections": [
+          {
+            "connection_id": "bybit-shard-0",
+            "state": "healthy",
+            "subscribed_symbols": 7,
+            "messages_received": 2535,
+            "reconnect_count": 0,
+            "last_message_age_ms": 236.2093960000493,
+            "last_error": null
+          }
+        ]
+      },
+      "events_consumed_total": 0,
+      "t": 115.0,
+      "candidates_binance": [],
+      "signals_evaluated_total": 9,
+      "entries_opened_total": 1,
+      "open_positions": 0,
+      "closed_positions": 1
+    },
+    {
+      "buffer": {
+        "state": "normal",
+        "size": 0,
+        "capacity": 10000,
+        "utilization": 0.0,
+        "dropped_total": 0,
+        "dropped_by_priority": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "p0_protected_overflow_events": 0,
+        "counts_by_priority": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        }
+      },
+      "binance": {
+        "exchange": "binance",
+        "total_messages_received": 2520,
+        "total_reconnects": 1,
+        "is_healthy": true,
+        "connections": [
+          {
+            "connection_id": "binance-shard-0",
+            "state": "healthy",
+            "subscribed_symbols": 3,
+            "messages_received": 971,
+            "reconnect_count": 1,
+            "last_message_age_ms": 246.95464499995978,
+            "last_error": "no close frame received or sent"
+          },
+          {
+            "connection_id": "binance-shard-1",
+            "state": "healthy",
+            "subscribed_symbols": 2,
+            "messages_received": 812,
+            "reconnect_count": 0,
+            "last_message_age_ms": 246.91050199999154,
+            "last_error": null
+          },
+          {
+            "connection_id": "binance-shard-2",
+            "state": "healthy",
+            "subscribed_symbols": 2,
+            "messages_received": 737,
+            "reconnect_count": 0,
+            "last_message_age_ms": 246.87919699999838,
+            "last_error": null
+          }
+        ]
+      },
+      "bybit": {
+        "exchange": "bybit",
+        "total_messages_received": 2641,
+        "total_reconnects": 0,
+        "is_healthy": true,
+        "connections": [
+          {
+            "connection_id": "bybit-shard-0",
+            "state": "healthy",
+            "subscribed_symbols": 7,
+            "messages_received": 2641,
+            "reconnect_count": 0,
+            "last_message_age_ms": 226.04630499995437,
+            "last_error": null
+          }
+        ]
+      },
+      "events_consumed_total": 0,
+      "t": 120.0,
+      "candidates_binance": [],
+      "signals_evaluated_total": 9,
+      "entries_opened_total": 1,
+      "open_positions": 0,
+      "closed_positions": 1
+    },
+    {
+      "buffer": {
+        "state": "normal",
+        "size": 0,
+        "capacity": 10000,
+        "utilization": 0.0,
+        "dropped_total": 0,
+        "dropped_by_priority": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "p0_protected_overflow_events": 0,
+        "counts_by_priority": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        }
+      },
+      "binance": {
+        "exchange": "binance",
+        "total_messages_received": 2625,
+        "total_reconnects": 1,
+        "is_healthy": true,
+        "connections": [
+          {
+            "connection_id": "binance-shard-0",
+            "state": "healthy",
+            "subscribed_symbols": 3,
+            "messages_received": 1016,
+            "reconnect_count": 1,
+            "last_message_age_ms": 234.0020489999688,
+            "last_error": "no close frame received or sent"
+          },
+          {
+            "connection_id": "binance-shard-1",
+            "state": "healthy",
+            "subscribed_symbols": 2,
+            "messages_received": 842,
+            "reconnect_count": 0,
+            "last_message_age_ms": 233.96366999998008,
+            "last_error": null
+          },
+          {
+            "connection_id": "binance-shard-2",
+            "state": "healthy",
+            "subscribed_symbols": 2,
+            "messages_received": 767,
+            "reconnect_count": 0,
+            "last_message_age_ms": 233.93342099996062,
+            "last_error": null
+          }
+        ]
+      },
+      "bybit": {
+        "exchange": "bybit",
+        "total_messages_received": 2747,
+        "total_reconnects": 0,
+        "is_healthy": true,
+        "connections": [
+          {
+            "connection_id": "bybit-shard-0",
+            "state": "healthy",
+            "subscribed_symbols": 7,
+            "messages_received": 2747,
+            "reconnect_count": 0,
+            "last_message_age_ms": 213.09351900004003,
+            "last_error": null
+          }
+        ]
+      },
+      "events_consumed_total": 0,
+      "t": 125.0,
+      "candidates_binance": [],
+      "signals_evaluated_total": 9,
+      "entries_opened_total": 1,
+      "open_positions": 0,
+      "closed_positions": 1
+    },
+    {
+      "buffer": {
+        "state": "normal",
+        "size": 0,
+        "capacity": 10000,
+        "utilization": 0.0,
+        "dropped_total": 0,
+        "dropped_by_priority": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "p0_protected_overflow_events": 0,
+        "counts_by_priority": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        }
+      },
+      "binance": {
+        "exchange": "binance",
+        "total_messages_received": 2730,
+        "total_reconnects": 1,
+        "is_healthy": true,
+        "connections": [
+          {
+            "connection_id": "binance-shard-0",
+            "state": "healthy",
+            "subscribed_symbols": 3,
+            "messages_received": 1061,
+            "reconnect_count": 1,
+            "last_message_age_ms": 224.1088049999007,
+            "last_error": "no close frame received or sent"
+          },
+          {
+            "connection_id": "binance-shard-1",
+            "state": "healthy",
+            "subscribed_symbols": 2,
+            "messages_received": 872,
+            "reconnect_count": 0,
+            "last_message_age_ms": 224.0651939999907,
+            "last_error": null
+          },
+          {
+            "connection_id": "binance-shard-2",
+            "state": "healthy",
+            "subscribed_symbols": 2,
+            "messages_received": 797,
+            "reconnect_count": 0,
+            "last_message_age_ms": 224.03294700006882,
+            "last_error": null
+          }
+        ]
+      },
+      "bybit": {
+        "exchange": "bybit",
+        "total_messages_received": 2853,
+        "total_reconnects": 0,
+        "is_healthy": true,
+        "connections": [
+          {
+            "connection_id": "bybit-shard-0",
+            "state": "healthy",
+            "subscribed_symbols": 7,
+            "messages_received": 2853,
+            "reconnect_count": 0,
+            "last_message_age_ms": 202.20395499995902,
+            "last_error": null
+          }
+        ]
+      },
+      "events_consumed_total": 0,
+      "t": 130.0,
+      "candidates_binance": [],
+      "signals_evaluated_total": 9,
+      "entries_opened_total": 1,
+      "open_positions": 0,
+      "closed_positions": 1
+    },
+    {
+      "buffer": {
+        "state": "normal",
+        "size": 0,
+        "capacity": 10000,
+        "utilization": 0.0,
+        "dropped_total": 0,
+        "dropped_by_priority": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "p0_protected_overflow_events": 0,
+        "counts_by_priority": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        }
+      },
+      "binance": {
+        "exchange": "binance",
+        "total_messages_received": 2835,
+        "total_reconnects": 1,
+        "is_healthy": true,
+        "connections": [
+          {
+            "connection_id": "binance-shard-0",
+            "state": "healthy",
+            "subscribed_symbols": 3,
+            "messages_received": 1106,
+            "reconnect_count": 1,
+            "last_message_age_ms": 213.00199699999212,
+            "last_error": "no close frame received or sent"
+          },
+          {
+            "connection_id": "binance-shard-1",
+            "state": "healthy",
+            "subscribed_symbols": 2,
+            "messages_received": 902,
+            "reconnect_count": 0,
+            "last_message_age_ms": 212.95991399995273,
+            "last_error": null
+          },
+          {
+            "connection_id": "binance-shard-2",
+            "state": "healthy",
+            "subscribed_symbols": 2,
+            "messages_received": 827,
+            "reconnect_count": 0,
+            "last_message_age_ms": 212.87276199996086,
+            "last_error": null
+          }
+        ]
+      },
+      "bybit": {
+        "exchange": "bybit",
+        "total_messages_received": 2959,
+        "total_reconnects": 0,
+        "is_healthy": true,
+        "connections": [
+          {
+            "connection_id": "bybit-shard-0",
+            "state": "healthy",
+            "subscribed_symbols": 7,
+            "messages_received": 2959,
+            "reconnect_count": 0,
+            "last_message_age_ms": 190.59326499996132,
+            "last_error": null
+          }
+        ]
+      },
+      "events_consumed_total": 0,
+      "t": 135.0,
+      "candidates_binance": [],
+      "signals_evaluated_total": 9,
+      "entries_opened_total": 1,
+      "open_positions": 0,
+      "closed_positions": 1
+    },
+    {
+      "buffer": {
+        "state": "normal",
+        "size": 0,
+        "capacity": 10000,
+        "utilization": 0.0,
+        "dropped_total": 0,
+        "dropped_by_priority": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "p0_protected_overflow_events": 0,
+        "counts_by_priority": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        }
+      },
+      "binance": {
+        "exchange": "binance",
+        "total_messages_received": 2940,
+        "total_reconnects": 1,
+        "is_healthy": true,
+        "connections": [
+          {
+            "connection_id": "binance-shard-0",
+            "state": "healthy",
+            "subscribed_symbols": 3,
+            "messages_received": 1151,
+            "reconnect_count": 1,
+            "last_message_age_ms": 200.01421299991762,
+            "last_error": "no close frame received or sent"
+          },
+          {
+            "connection_id": "binance-shard-1",
+            "state": "healthy",
+            "subscribed_symbols": 2,
+            "messages_received": 932,
+            "reconnect_count": 0,
+            "last_message_age_ms": 199.97032100002343,
+            "last_error": null
+          },
+          {
+            "connection_id": "binance-shard-2",
+            "state": "healthy",
+            "subscribed_symbols": 2,
+            "messages_received": 857,
+            "reconnect_count": 0,
+            "last_message_age_ms": 199.93734499996663,
+            "last_error": null
+          }
+        ]
+      },
+      "bybit": {
+        "exchange": "bybit",
+        "total_messages_received": 3065,
+        "total_reconnects": 0,
+        "is_healthy": true,
+        "connections": [
+          {
+            "connection_id": "bybit-shard-0",
+            "state": "healthy",
+            "subscribed_symbols": 7,
+            "messages_received": 3065,
+            "reconnect_count": 0,
+            "last_message_age_ms": 179.0719990000298,
+            "last_error": null
+          }
+        ]
+      },
+      "events_consumed_total": 0,
+      "t": 140.0,
+      "candidates_binance": [],
+      "signals_evaluated_total": 9,
+      "entries_opened_total": 1,
+      "open_positions": 0,
+      "closed_positions": 1
+    },
+    {
+      "buffer": {
+        "state": "normal",
+        "size": 0,
+        "capacity": 10000,
+        "utilization": 0.0,
+        "dropped_total": 0,
+        "dropped_by_priority": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "p0_protected_overflow_events": 0,
+        "counts_by_priority": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        }
+      },
+      "binance": {
+        "exchange": "binance",
+        "total_messages_received": 3045,
+        "total_reconnects": 1,
+        "is_healthy": true,
+        "connections": [
+          {
+            "connection_id": "binance-shard-0",
+            "state": "healthy",
+            "subscribed_symbols": 3,
+            "messages_received": 1196,
+            "reconnect_count": 1,
+            "last_message_age_ms": 189.61956700002247,
+            "last_error": "no close frame received or sent"
+          },
+          {
+            "connection_id": "binance-shard-1",
+            "state": "healthy",
+            "subscribed_symbols": 2,
+            "messages_received": 962,
+            "reconnect_count": 0,
+            "last_message_age_ms": 189.56530399998428,
+            "last_error": null
+          },
+          {
+            "connection_id": "binance-shard-2",
+            "state": "healthy",
+            "subscribed_symbols": 2,
+            "messages_received": 887,
+            "reconnect_count": 0,
+            "last_message_age_ms": 189.47384499995223,
+            "last_error": null
+          }
+        ]
+      },
+      "bybit": {
+        "exchange": "bybit",
+        "total_messages_received": 3171,
+        "total_reconnects": 0,
+        "is_healthy": true,
+        "connections": [
+          {
+            "connection_id": "bybit-shard-0",
+            "state": "healthy",
+            "subscribed_symbols": 7,
+            "messages_received": 3171,
+            "reconnect_count": 0,
+            "last_message_age_ms": 166.44437100001142,
+            "last_error": null
+          }
+        ]
+      },
+      "events_consumed_total": 0,
+      "t": 145.0,
+      "candidates_binance": [],
+      "signals_evaluated_total": 9,
+      "entries_opened_total": 1,
+      "open_positions": 0,
+      "closed_positions": 1
+    },
+    {
+      "buffer": {
+        "state": "normal",
+        "size": 0,
+        "capacity": 10000,
+        "utilization": 0.0,
+        "dropped_total": 0,
+        "dropped_by_priority": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "p0_protected_overflow_events": 0,
+        "counts_by_priority": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        }
+      },
+      "binance": {
+        "exchange": "binance",
+        "total_messages_received": 3150,
+        "total_reconnects": 1,
+        "is_healthy": true,
+        "connections": [
+          {
+            "connection_id": "binance-shard-0",
+            "state": "healthy",
+            "subscribed_symbols": 3,
+            "messages_received": 1241,
+            "reconnect_count": 1,
+            "last_message_age_ms": 177.89781000010407,
+            "last_error": "no close frame received or sent"
+          },
+          {
+            "connection_id": "binance-shard-1",
+            "state": "healthy",
+            "subscribed_symbols": 2,
+            "messages_received": 992,
+            "reconnect_count": 0,
+            "last_message_age_ms": 177.8528559998449,
+            "last_error": null
+          },
+          {
+            "connection_id": "binance-shard-2",
+            "state": "healthy",
+            "subscribed_symbols": 2,
+            "messages_received": 917,
+            "reconnect_count": 0,
+            "last_message_age_ms": 177.8210580000632,
+            "last_error": null
+          }
+        ]
+      },
+      "bybit": {
+        "exchange": "bybit",
+        "total_messages_received": 3277,
+        "total_reconnects": 0,
+        "is_healthy": true,
+        "connections": [
+          {
+            "connection_id": "bybit-shard-0",
+            "state": "healthy",
+            "subscribed_symbols": 7,
+            "messages_received": 3277,
+            "reconnect_count": 0,
+            "last_message_age_ms": 155.94661700015422,
+            "last_error": null
+          }
+        ]
+      },
+      "events_consumed_total": 0,
+      "t": 150.0,
+      "candidates_binance": [],
+      "signals_evaluated_total": 9,
+      "entries_opened_total": 1,
+      "open_positions": 0,
+      "closed_positions": 1
+    }
+  ],
+  "final_ingestion_snapshot": {
+    "buffer": {
+      "state": "normal",
+      "size": 0,
+      "capacity": 10000,
+      "utilization": 0.0,
+      "dropped_total": 0,
+      "dropped_by_priority": {
+        "P0": 0,
+        "P1": 0,
+        "P2": 0,
+        "P3": 0
+      },
+      "p0_protected_overflow_events": 0,
+      "counts_by_priority": {
+        "P0": 0,
+        "P1": 0,
+        "P2": 0,
+        "P3": 0
+      }
+    },
+    "binance": {
+      "exchange": "binance",
+      "total_messages_received": 3150,
+      "total_reconnects": 1,
+      "is_healthy": true,
+      "connections": [
+        {
+          "connection_id": "binance-shard-0",
+          "state": "healthy",
+          "subscribed_symbols": 3,
+          "messages_received": 1241,
+          "reconnect_count": 1,
+          "last_message_age_ms": 178.09513100019103,
+          "last_error": "no close frame received or sent"
+        },
+        {
+          "connection_id": "binance-shard-1",
+          "state": "healthy",
+          "subscribed_symbols": 2,
+          "messages_received": 992,
+          "reconnect_count": 0,
+          "last_message_age_ms": 178.04497899987837,
+          "last_error": null
+        },
+        {
+          "connection_id": "binance-shard-2",
+          "state": "healthy",
+          "subscribed_symbols": 2,
+          "messages_received": 917,
+          "reconnect_count": 0,
+          "last_message_age_ms": 178.01190000000133,
+          "last_error": null
+        }
+      ]
+    },
+    "bybit": {
+      "exchange": "bybit",
+      "total_messages_received": 3277,
+      "total_reconnects": 0,
+      "is_healthy": true,
+      "connections": [
+        {
+          "connection_id": "bybit-shard-0",
+          "state": "healthy",
+          "subscribed_symbols": 7,
+          "messages_received": 3277,
+          "reconnect_count": 0,
+          "last_message_age_ms": 156.16544099998464,
+          "last_error": null
+        }
+      ]
+    },
+    "events_consumed_total": 0
+  },
+  "fake_binance_stats": {
+    "connections": 5,
+    "messages_sent": 3155,
+    "forced_disconnects": 1
+  },
+  "fake_bybit_stats": {
+    "connections": 2,
+    "messages_sent": 3272,
+    "pings_received": 59
+  },
+  "pipeline_final": {
+    "signals_evaluated_total": 9,
+    "entries_opened_total": 1,
+    "open_positions": 0,
+    "closed_positions": 1
+  },
+  "signal_rows_sample": [
+    {
+      "symbol": "ETHUSDT",
+      "final_signal_state": "no_trade",
+      "quant_score": null,
+      "real_friction_coverage": null
+    },
+    {
+      "symbol": "ETHUSDT",
+      "final_signal_state": "no_trade",
+      "quant_score": null,
+      "real_friction_coverage": null
+    },
+    {
+      "symbol": "ETHUSDT",
+      "final_signal_state": "entry_pending",
+      "quant_score": 81.27967949988076,
+      "real_friction_coverage": 67.56771536929365
+    },
+    {
+      "symbol": "ETHUSDT",
+      "final_signal_state": "no_trade",
+      "quant_score": null,
+      "real_friction_coverage": null
+    },
+    {
+      "symbol": "ETHUSDT",
+      "final_signal_state": "no_trade",
+      "quant_score": 77.55865124277892,
+      "real_friction_coverage": null
+    },
+    {
+      "symbol": "ETHUSDT",
+      "final_signal_state": "no_trade",
+      "quant_score": null,
+      "real_friction_coverage": null
+    },
+    {
+      "symbol": "ETHUSDT",
+      "final_signal_state": "no_trade",
+      "quant_score": null,
+      "real_friction_coverage": null
+    },
+    {
+      "symbol": "ETHUSDT",
+      "final_signal_state": "no_trade",
+      "quant_score": null,
+      "real_friction_coverage": null
+    },
+    {
+      "symbol": "ETHUSDT",
+      "final_signal_state": "no_trade",
+      "quant_score": null,
+      "real_friction_coverage": null
+    }
+  ],
+  "trade_rows": [
+    {
+      "symbol": "ETHUSDT",
+      "entry_price": 280.1139,
+      "exit_price": 223.5677,
+      "final_state": "stop_loss",
+      "realized_pnl_usd": -188.0911596108617
+    }
+  ],
+  "claude_decision_rows": [
+    {
+      "signal_id": "a5adf273-6512-4346-9d89-bf012441b023",
+      "decision": "approved"
+    }
+  ],
+  "distinct_signal_states": [
+    "entry_pending",
+    "no_trade"
+  ]
+}

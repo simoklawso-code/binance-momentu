@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Crypto Momentum & Scalping Hunter</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  :root {
+    --bg: #0b0f14; --panel: #121821; --border: #232b36; --text: #e6edf3;
+    --muted: #8b98a5; --green: #3fb950; --red: #f85149; --blue: #58a6ff; --yellow: #d29922;
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--text); font-family: -apple-system, Segoe UI, Roboto, sans-serif; font-size: 14px; }
+  header { padding: 16px 20px; border-bottom: 1px solid var(--border); display:flex; align-items:center; justify-content:space-between; }
+  header h1 { font-size: 16px; margin:0; font-weight: 600; }
+  .badge { padding: 3px 8px; border-radius: 999px; font-size: 12px; border:1px solid var(--border); }
+  .badge.ok { color: var(--green); border-color: var(--green); }
+  .badge.warn { color: var(--yellow); border-color: var(--yellow); }
+  .badge.bad { color: var(--red); border-color: var(--red); }
+  main { padding: 20px; display: grid; grid-template-columns: repeat(auto-fit, minmax(360px, 1fr)); gap: 16px; }
+  section { background: var(--panel); border: 1px solid var(--border); border-radius: 10px; padding: 14px 16px; }
+  section h2 { font-size: 13px; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); margin: 0 0 10px; }
+  table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  th, td { text-align: left; padding: 5px 6px; border-bottom: 1px solid var(--border); white-space: nowrap; }
+  th { color: var(--muted); font-weight: 500; }
+  .num { text-align: right; font-variant-numeric: tabular-nums; }
+  .pos { color: var(--green); } .neg { color: var(--red); }
+  .muted { color: var(--muted); }
+  .scroll { max-height: 320px; overflow: auto; }
+  .notif { padding: 6px 0; border-bottom: 1px solid var(--border); font-size: 13px; }
+  .notif .kind { color: var(--blue); font-weight: 600; margin-right: 6px; }
+  footer { padding: 10px 20px; color: var(--muted); font-size: 12px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Crypto Momentum &amp; Scalping Hunter</h1>
+  <span id="conn-badge" class="badge muted">connecting...</span>
+</header>
+<main>
+  <section>
+    <h2>System Health</h2>
+    <div id="health"></div>
+  </section>
+
+  <section>
+    <h2>Candidates (Binance)</h2>
+    <div class="scroll"><table id="candidates-binance"><thead>
+      <tr><th>Symbol</th><th class="num">RVOL</th><th class="num">Accel</th><th class="num">24h $Vol</th><th class="num">Spread%</th><th class="num">Price</th></tr>
+    </thead><tbody></tbody></table></div>
+  </section>
+
+  <section>
+    <h2>Candidates (Bybit)</h2>
+    <div class="scroll"><table id="candidates-bybit"><thead>
+      <tr><th>Symbol</th><th class="num">RVOL</th><th class="num">Accel</th><th class="num">24h $Vol</th><th class="num">Spread%</th><th class="num">Price</th></tr>
+    </thead><tbody></tbody></table></div>
+  </section>
+
+  <section>
+    <h2>Open Paper Positions</h2>
+    <div class="scroll"><table id="positions"><thead>
+      <tr><th>Symbol</th><th>Ex</th><th class="num">Entry</th><th class="num">SL</th><th class="num">TP</th><th class="num">Size $</th></tr>
+    </thead><tbody></tbody></table></div>
+  </section>
+
+  <section>
+    <h2>Recent Signals</h2>
+    <div class="scroll"><table id="signals"><thead>
+      <tr><th>Symbol</th><th>State</th><th class="num">Score</th><th class="num">Friction Cov.</th><th>Reasons</th></tr>
+    </thead><tbody></tbody></table></div>
+  </section>
+
+  <section>
+    <h2>Recent Trades</h2>
+    <div class="scroll"><table id="trades"><thead>
+      <tr><th>Symbol</th><th>State</th><th class="num">PnL $</th></tr>
+    </thead><tbody></tbody></table></div>
+  </section>
+
+  <section>
+    <h2>Notifications</h2>
+    <div class="scroll" id="notifications"></div>
+  </section>
+</main>
+<footer>Polls the local API every 3s. Phase 1-3 data is live; this dashboard (Phase 4) is intentionally lightweight per spec §39.</footer>
+
+<script>
+const $ = (sel) => document.querySelector(sel);
+const fmt = (n, d=2) => (n === null || n === undefined || Number.isNaN(n)) ? '-' : Number(n).toFixed(d);
+
+async function getJSON(path) {
+  const res = await fetch(path);
+  if (!res.ok) throw new Error(res.status);
+  return res.json();
+}
+
+function renderRows(tableId, rows, rowFn) {
+  const tbody = document.querySelector(`#${tableId} tbody`);
+  tbody.innerHTML = rows.map(rowFn).join('');
+}
+
+async function refresh() {
+  try {
+    const health = await getJSON('/api/health');
+    $('#conn-badge').textContent = 'connected';
+    $('#conn-badge').className = 'badge ok';
+    const b = health.ingestion?.binance || {};
+    const y = health.ingestion?.bybit || {};
+    const buf = health.ingestion?.buffer || {};
+    $('#health').innerHTML = `
+      <table>
+        <tr><td>Buffer</td><td class="num">${buf.size ?? '-'}/${buf.capacity ?? '-'} (${buf.state ?? '-'})</td></tr>
+        <tr><td>Binance</td><td class="num">${b.is_healthy ? 'healthy' : 'down'} · msgs ${b.total_messages_received ?? 0} · reconnects ${b.total_reconnects ?? 0}</td></tr>
+        <tr><td>Bybit</td><td class="num">${y.is_healthy ? 'healthy' : 'down'} · msgs ${y.total_messages_received ?? 0} · reconnects ${y.total_reconnects ?? 0}</td></tr>
+        <tr><td>Signals evaluated</td><td class="num">${health.pipeline?.signals_evaluated_total ?? 0}</td></tr>
+        <tr><td>Entries opened</td><td class="num">${health.pipeline?.entries_opened_total ?? 0}</td></tr>
+        <tr><td>Open positions</td><td class="num">${health.pipeline?.open_positions ?? 0}</td></tr>
+      </table>`;
+  } catch (e) {
+    $('#conn-badge').textContent = 'disconnected';
+    $('#conn-badge').className = 'badge bad';
+  }
+
+  try {
+    const candidates = await getJSON('/api/candidates');
+    renderRows('candidates-binance', candidates.binance || [], r => `<tr><td>${r.symbol}</td><td class="num">${fmt(r.rvol)}</td><td class="num">${fmt(r.trade_acceleration)}</td><td class="num">${fmt(r.dollar_volume_24h,0)}</td><td class="num">${fmt(r.spread_percent,3)}</td><td class="num">${fmt(r.last_price,4)}</td></tr>`);
+    renderRows('candidates-bybit', candidates.bybit || [], r => `<tr><td>${r.symbol}</td><td class="num">${fmt(r.rvol)}</td><td class="num">${fmt(r.trade_acceleration)}</td><td class="num">${fmt(r.dollar_volume_24h,0)}</td><td class="num">${fmt(r.spread_percent,3)}</td><td class="num">${fmt(r.last_price,4)}</td></tr>`);
+  } catch (e) {}
+
+  try {
+    const positions = await getJSON('/api/positions');
+    renderRows('positions', positions, p => `<tr><td>${p.symbol}</td><td>${p.exchange}</td><td class="num">${fmt(p.entry_price,4)}</td><td class="num">${fmt(p.stop_loss,4)}</td><td class="num">${fmt(p.take_profit,4)}</td><td class="num">${fmt(p.size_usd,2)}</td></tr>`);
+  } catch (e) {}
+
+  try {
+    const signals = await getJSON('/api/signals?limit=30');
+    renderRows('signals', signals, s => `<tr><td>${s.symbol}</td><td>${s.final_signal_state}</td><td class="num">${fmt(s.quant_score,1)}</td><td class="num">${fmt(s.real_friction_coverage,2)}</td><td class="muted">${(JSON.parse(s.reasons||'[]')).join(', ')}</td></tr>`);
+  } catch (e) {}
+
+  try {
+    const trades = await getJSON('/api/trades?limit=30');
+    renderRows('trades', trades, t => `<tr><td>${t.symbol}</td><td>${t.final_state || 'open'}</td><td class="num ${t.realized_pnl_usd > 0 ? 'pos' : (t.realized_pnl_usd < 0 ? 'neg' : '')}">${fmt(t.realized_pnl_usd,2)}</td></tr>`);
+  } catch (e) {}
+
+  try {
+    const notifications = await getJSON('/api/notifications?limit=20');
+    $('#notifications').innerHTML = notifications.slice().reverse().map(n =>
+      `<div class="notif"><span class="kind">${n.kind}</span>${n.message}</div>`
+    ).join('') || '<span class="muted">No notifications yet.</span>';
+  } catch (e) {}
+}
+
+refresh();
+setInterval(refresh, 3000);
+</script>
+</body>
+</html>

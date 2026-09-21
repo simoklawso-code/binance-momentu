@@ -1,0 +1,131 @@
+# Crypto Momentum & Scalping Hunter — example configuration (§51)
+# Copy to config.yaml and adjust. All values shown are the defaults.
+
+environment: development
+log_level: INFO
+metrics_log_interval_seconds: 7
+
+binance:
+  ws_base_url: wss://fstream.binance.com
+  rest_base_url: https://fapi.binance.com
+  max_streams_per_connection: 200
+  max_connections: 4
+  soft_reconnect_interval_hours: 20
+  reconnect_backoff_base_seconds: 1
+  reconnect_backoff_max_seconds: 60
+  reconnect_backoff_jitter_seconds: 1
+  ping_interval_seconds: 180
+  connection_health_timeout_seconds: 30
+
+bybit:
+  ws_base_url: wss://stream.bybit.com/v5/public/linear
+  rest_base_url: https://api.bybit.com
+  max_streams_per_connection: 200
+  max_connections: 2
+  soft_reconnect_interval_hours: 20
+  reconnect_backoff_base_seconds: 1
+  reconnect_backoff_max_seconds: 60
+  reconnect_backoff_jitter_seconds: 1
+  ping_interval_seconds: 20
+  connection_health_timeout_seconds: 30
+
+buffer:
+  capacity: 10000
+  pressure_high_watermark: 0.80
+  p0_overload_watermark: 0.98
+  recovery_watermark: 0.60
+
+universe:
+  min_symbols: 150
+  max_symbols: 300
+  static_symbols:
+    - BTCUSDT
+    - ETHUSDT
+    - SOLUSDT
+    - BNBUSDT
+    - XRPUSDT
+
+retention:
+  raw_event_retention_days: 7
+  feature_snapshot_retention_days: 30
+  signal_audit_retention_days: 180
+
+database:
+  path: ./data/crypto_hunter.sqlite3
+  journal_mode: WAL
+  synchronous: NORMAL
+  busy_timeout_ms: 5000
+  write_queue_max_size: 5000
+
+# --- Phase 3 constants, defined now per §65 step 2 — not used until Phase 3 ---
+strategy:
+  rvol_threshold: 2.5
+  acceleration_threshold: 2.0
+  min_24h_volume_usd: 15000000
+  friction_coverage_ratio: 2.5
+  risk_per_trade_percent: 0.5
+  daily_loss_limit_percent: 3.0
+  max_open_positions: 3
+  max_portfolio_heat: 1.5
+  max_spread_percent: 0.08
+  base_slippage_percent: 0.02
+  slippage_gamma: 0.10
+  candidate_min: 5
+  candidate_max: 15
+  claude_score_threshold: 80
+  claude_cooldown_seconds: 300
+  binance_oi_interval_seconds: 60
+  bybit_oi_interval_seconds: 60
+  btc_volatility_pause_threshold_percent: 1.2
+  venue_dedup_score_epsilon: 2
+  cross_exchange_dedup_window_seconds: 10
+  rvol_score_floor: 1.0
+  rvol_score_ceiling: 5.0
+  acceleration_score_floor: 1.0
+  acceleration_score_ceiling: 4.0
+  delta_score_floor: 0.0
+  delta_score_ceiling: 0.60
+  momentum_score_floor: 0.5
+  momentum_score_ceiling: 2.0
+  momentum_window_minutes: 3
+  breakout_atr_multiplier: 0.10
+  breakout_score_ceiling: 0.50
+  liquidity_score_ceiling_usd: 100000000
+  friction_score_floor: 1.0
+  friction_score_ceiling: 4.0
+  reference_order_size_usd: 1000
+  sl_atr_multiplier: 1.20
+  take_profit_rr: 2.0
+  taker_fee_percent: 0.05
+  min_position_size_usd: 20
+  max_position_size_usd: 5000
+  paper_starting_equity_usd: 10000
+  quant_score_weights:
+    rvol: 0.20
+    acceleration: 0.15
+    delta: 0.15
+    momentum: 0.15
+    breakout: 0.15
+    liquidity: 0.10
+    friction: 0.10
+  quant_score_thresholds:
+    watch: 60
+    candidate: 70
+    pump_detected: 80
+    high_conviction: 90
+
+macro:
+  economic_calendar_enabled: true
+  macro_high_impact_enabled: true
+  macro_event_pre_window_minutes: 30
+  macro_event_post_window_minutes: 30
+  macro_entry_restriction_enabled: true
+  macro_required_for_entry: false
+  macro_data_max_age_seconds: 900
+
+market_intelligence:
+  enabled: false
+  refresh_mode: hybrid
+  narrative_cooldown_seconds: 300
+  narrative_cache_ttl_seconds: 300
+  regime_thresholds: {}
